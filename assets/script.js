@@ -108,6 +108,6 @@ if (form) {
       return;
     }
 
-    window.location.href = `mailto:ooperations@velnex.in?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:operations@velnex.in?subject=${subject}&body=${body}`;
   });
 }
