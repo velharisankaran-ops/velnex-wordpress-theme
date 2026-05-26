@@ -1,6 +1,19 @@
 const header = document.querySelector("[data-header]");
 const nav = document.querySelector("[data-nav]");
 const navToggle = document.querySelector("[data-nav-toggle]");
+const pageLoader = document.querySelector("[data-page-loader]");
+
+const hidePageLoader = () => {
+  if (pageLoader) {
+    pageLoader.classList.add("is-hidden");
+  }
+};
+
+window.addEventListener("load", () => {
+  window.setTimeout(hidePageLoader, 450);
+});
+
+window.setTimeout(hidePageLoader, 2200);
 
 const setHeaderState = () => {
   header.classList.toggle("scrolled", window.scrollY > 18);

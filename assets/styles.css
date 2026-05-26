@@ -72,6 +72,57 @@ textarea {
   font: inherit;
 }
 
+.page-loader {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: grid;
+  place-items: center;
+  gap: 22px;
+  color: var(--white);
+  background: #071625;
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 420ms ease, visibility 420ms ease;
+}
+
+.page-loader img {
+  width: min(46vw, 190px);
+  height: auto;
+  filter: brightness(0) invert(1);
+}
+
+.page-loader span {
+  width: min(42vw, 160px);
+  height: 2px;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.18);
+}
+
+.page-loader span::after {
+  display: block;
+  width: 42%;
+  height: 100%;
+  background: var(--copper);
+  content: "";
+  animation: loaderTrack 1s ease-in-out infinite;
+}
+
+.page-loader.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+@keyframes loaderTrack {
+  0% {
+    transform: translateX(-105%);
+  }
+  100% {
+    transform: translateX(245%);
+  }
+}
+
 .site-header {
   position: fixed;
   top: 0;
