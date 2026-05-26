@@ -19,7 +19,7 @@ function velnex_enqueue_assets() {
 
     wp_enqueue_style(
         'velnex-fonts',
-        'https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Source+Sans+3:wght@300;400;500;600&display=swap',
+        'https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Source+Sans+3:wght@300;400;500;600;700&display=swap',
         array(),
         null
     );

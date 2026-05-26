@@ -432,7 +432,7 @@ p {
 
 .lead-stack strong {
   color: var(--ink);
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .metric-row {
@@ -467,7 +467,7 @@ p {
   max-width: 190px;
   margin-top: 18px;
   color: var(--ink-2);
-  font-weight: 400;
+  font-weight: 600;
 }
 
 .dark-band {
