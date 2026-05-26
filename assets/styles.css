@@ -329,6 +329,15 @@ p {
   font-size: 1.18rem;
 }
 
+.lead-stack p {
+  color: #2f3a49;
+}
+
+.lead-stack strong {
+  color: var(--ink);
+  font-weight: 600;
+}
+
 .metric-row {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
