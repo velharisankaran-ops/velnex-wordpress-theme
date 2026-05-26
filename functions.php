@@ -41,6 +41,26 @@ function velnex_enqueue_assets() {
 }
 add_action('wp_enqueue_scripts', 'velnex_enqueue_assets');
 
+function velnex_create_opportunities_page() {
+    $page = get_page_by_path('opportunities');
+
+    if ($page) {
+        return;
+    }
+
+    wp_insert_post(
+        array(
+            'post_title' => 'Opportunities',
+            'post_name' => 'opportunities',
+            'post_status' => 'publish',
+            'post_type' => 'page',
+            'post_content' => '',
+        )
+    );
+}
+add_action('after_switch_theme', 'velnex_create_opportunities_page');
+add_action('init', 'velnex_create_opportunities_page');
+
 function velnex_home_seo_meta() {
     if (!is_front_page()) {
         return;

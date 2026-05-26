@@ -18,13 +18,9 @@
     { "name": "hero", "title": "Hero", "area": "uncategorized" },
     { "name": "firm", "title": "About The Firm", "area": "uncategorized" },
     { "name": "model", "title": "What We Do", "area": "uncategorized" },
-    { "name": "clients", "title": "Our Clients", "area": "uncategorized" },
     { "name": "gap", "title": "Structural Gap", "area": "uncategorized" },
     { "name": "people", "title": "People & Careers", "area": "uncategorized" },
-    { "name": "evolution", "title": "Strategic Evolution", "area": "uncategorized" },
-    { "name": "sectors", "title": "Sectors", "area": "uncategorized" },
-    { "name": "insights", "title": "News & Insights", "area": "uncategorized" },
-    { "name": "status", "title": "Foundational Status", "area": "uncategorized" },
+    { "name": "opportunities", "title": "Opportunities", "area": "uncategorized" },
     { "name": "contact", "title": "Contact", "area": "uncategorized" },
     { "name": "footer", "title": "Footer", "area": "footer" }
   ]

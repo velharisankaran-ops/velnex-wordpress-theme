@@ -10,13 +10,9 @@ This theme follows the default Twenty Twenty-Five style structure:
 - parts/hero.html
 - parts/firm.html
 - parts/model.html
-- parts/clients.html
 - parts/gap.html
 - parts/people.html
-- parts/evolution.html
-- parts/sectors.html
-- parts/insights.html
-- parts/status.html
+- parts/opportunities.html
 - parts/contact.html
 - parts/footer.html
 - assets/styles.css

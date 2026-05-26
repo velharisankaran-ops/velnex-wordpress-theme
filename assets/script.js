@@ -53,7 +53,7 @@ document.querySelectorAll("[data-tab]").forEach((button) => {
 });
 
 const revealItems = document.querySelectorAll(
-  ".section-kicker, .split, .metric-row, .mandate-strip, .service-tabs, .client-card, .problem-grid article, .timeline article, .sector-grid span, .status-layout, .contact-inner"
+  ".section-kicker, .split, .metric-row, .mandate-strip, .service-tabs, .problem-grid article, .contact-inner"
 );
 
 revealItems.forEach((item) => item.classList.add("reveal"));
@@ -75,14 +75,39 @@ revealItems.forEach((item) => revealObserver.observe(item));
 const form = document.querySelector("[data-contact-form]");
 const formNote = document.querySelector("[data-form-note]");
 
-form.addEventListener("submit", (event) => {
-  event.preventDefault();
-  const data = new FormData(form);
-  const subject = encodeURIComponent(`Velnex enquiry: ${data.get("mandate")}`);
-  const body = encodeURIComponent(
-    `Name: ${data.get("name")}\nEmail: ${data.get("email")}\nMandate Type: ${data.get("mandate")}\n\nMessage:\n${data.get("message")}`
-  );
+if (form) {
+  form.addEventListener("submit", (event) => {
+    event.preventDefault();
+    const data = new FormData(form);
+    const submitter = event.submitter;
+    const channel = submitter?.value || "email";
+    const enquiryText =
+      `Name: ${data.get("name")}\n` +
+      `Email: ${data.get("email")}\n` +
+      `Phone / WhatsApp: ${data.get("phone")}\n` +
+      `I am a: ${data.get("profile")}\n` +
+      `Enquiry Type: ${data.get("mandate")}\n` +
+      `Company / Organization: ${data.get("company") || "Not provided"}\n` +
+      `Location: ${data.get("location") || "Not provided"}\n\n` +
+      `Message / Requirement:\n${data.get("message")}`;
+    const subject = encodeURIComponent(`Velnex enquiry: ${data.get("profile")}`);
+    const body = encodeURIComponent(enquiryText);
+    const whatsappText = encodeURIComponent(
+      `Velnex enquiry\n\n${enquiryText}`
+    );
 
-  formNote.textContent = "Your enquiry has been prepared in your email app.";
-  window.location.href = `mailto:contact@velnex.in?subject=${subject}&body=${body}`;
-});
+    if (formNote) {
+      formNote.textContent =
+        channel === "whatsapp"
+          ? "Your enquiry has been prepared in WhatsApp."
+          : "Your enquiry has been prepared in your email app.";
+    }
+
+    if (channel === "whatsapp") {
+      window.location.href = `https://wa.me/971555396942?text=${whatsappText}`;
+      return;
+    }
+
+    window.location.href = `mailto:ooperations@velnex.in?subject=${subject}&body=${body}`;
+  });
+}
