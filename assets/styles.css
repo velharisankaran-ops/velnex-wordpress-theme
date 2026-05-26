@@ -830,8 +830,17 @@ p {
 
   .hero {
     min-height: auto;
-    padding-top: 104px;
-    padding-bottom: 58px;
+    align-items: start;
+    padding-top: 116px;
+    padding-bottom: 72px;
+  }
+
+  .hero-content {
+    max-width: 720px;
+  }
+
+  .hero h1 {
+    white-space: normal;
   }
 
   .mandate-strip,
@@ -870,6 +879,7 @@ p {
 
   .site-header {
     gap: 12px;
+    min-height: 62px;
   }
 
   .brand {
@@ -890,23 +900,42 @@ p {
     display: none;
   }
 
+  .hero {
+    padding: 92px 16px 50px;
+  }
+
+  .eyebrow {
+    margin-bottom: 14px;
+    font-size: 0.76rem;
+    line-height: 1.25;
+  }
+
   .hero h1 {
-    font-size: clamp(1.82rem, 8vw, 2.65rem);
+    font-size: clamp(2.45rem, 11.5vw, 3.55rem);
     max-width: 100%;
+    line-height: 1.08;
     white-space: normal;
   }
 
   .hero-lines {
     max-width: 100%;
+    margin-top: 18px;
   }
 
   .hero-lines p:first-child {
-    font-size: clamp(1rem, 4.8vw, 1.28rem);
+    font-size: clamp(1.02rem, 4.55vw, 1.22rem);
+    line-height: 1.43;
   }
 
   .hero-lines p {
-    font-size: 0.98rem;
+    padding: 0;
+    font-size: 0.96rem;
     line-height: 1.45;
+    border-top: 0;
+  }
+
+  .site-nav a {
+    padding: 12px 0;
   }
 
   .section {
