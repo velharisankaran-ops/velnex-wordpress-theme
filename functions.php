@@ -40,3 +40,40 @@ function velnex_enqueue_assets() {
     );
 }
 add_action('wp_enqueue_scripts', 'velnex_enqueue_assets');
+
+function velnex_home_seo_meta() {
+    if (!is_front_page()) {
+        return;
+    }
+
+    $description = 'Velnex is a business management and operations company built to work with small and mid-sized businesses and investors across the UAE and India.';
+    $url = home_url('/');
+    ?>
+    <meta name="description" content="<?php echo esc_attr($description); ?>">
+    <meta property="og:title" content="Velnex | Business Management & Operations">
+    <meta property="og:description" content="<?php echo esc_attr($description); ?>">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="<?php echo esc_url($url); ?>">
+    <meta name="twitter:card" content="summary_large_image">
+    <script type="application/ld+json">
+    <?php
+    echo wp_json_encode(
+        array(
+            '@context' => 'https://schema.org',
+            '@type' => 'Organization',
+            'name' => 'Velnex Business Management and Operations',
+            'url' => $url,
+            'founder' => array(
+                '@type' => 'Person',
+                'name' => 'Velhari Sankaran',
+            ),
+            'areaServed' => array('United Arab Emirates', 'India'),
+            'description' => $description,
+        ),
+        JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE
+    );
+    ?>
+    </script>
+    <?php
+}
+add_action('wp_head', 'velnex_home_seo_meta', 5);
