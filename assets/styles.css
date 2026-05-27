@@ -679,13 +679,15 @@ p {
   background: var(--paper);
 }
 
-.opportunities-hero {
+.opportunities-hero,
+.services-hero {
   padding-top: 148px;
   color: var(--white);
   background: #071625;
 }
 
-.opportunities-hero h1 {
+.opportunities-hero h1,
+.services-hero h1 {
   margin: 0;
   font-family: var(--font-serif);
   font-size: clamp(2.7rem, 5.5vw, 6rem);
@@ -694,12 +696,15 @@ p {
   letter-spacing: 0;
 }
 
-.opportunities-hero p {
+.opportunities-hero p,
+.services-hero p {
   color: rgba(255, 255, 255, 0.76);
   font-size: 1.12rem;
 }
 
-.opportunity-section {
+.opportunity-section,
+.service-process,
+.service-output {
   background: var(--paper);
 }
 
@@ -776,6 +781,66 @@ p {
 .opportunity-note .button,
 .partner-criteria .button {
   margin-top: 14px;
+}
+
+.service-steps {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1px;
+  margin-top: 48px;
+  background: var(--line);
+  border: 1px solid var(--line);
+}
+
+.service-steps article {
+  min-height: 280px;
+  padding: 28px;
+  background: var(--white);
+}
+
+.service-steps span {
+  display: block;
+  margin-bottom: 30px;
+  color: var(--teal);
+  font-size: 0.82rem;
+  font-weight: 600;
+}
+
+.service-steps h3 {
+  font-family: var(--font-serif);
+  font-size: 1.38rem;
+}
+
+.service-steps p {
+  color: #2f3a49;
+}
+
+.output-list {
+  display: grid;
+  gap: 1px;
+  background: var(--line);
+  border: 1px solid var(--line);
+}
+
+.output-list div {
+  display: grid;
+  grid-template-columns: 64px minmax(0, 1fr);
+  gap: 18px;
+  align-items: center;
+  padding: 20px 22px;
+  background: var(--white);
+}
+
+.output-list span {
+  color: var(--teal);
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+.output-list p {
+  margin: 0;
+  color: var(--ink-2);
+  font-weight: 500;
 }
 
 .partner-grid {
@@ -1234,7 +1299,8 @@ p {
   .timeline,
   .insight-grid,
   .role-grid,
-  .partner-grid {
+  .partner-grid,
+  .service-steps {
     grid-template-columns: 1fr;
   }
 
@@ -1275,17 +1341,20 @@ p {
     gap: 30px;
   }
 
-  .opportunities-hero {
+  .opportunities-hero,
+  .services-hero {
     padding-top: 102px;
   }
 
-  .opportunities-hero h1 {
+  .opportunities-hero h1,
+  .services-hero h1 {
     font-size: clamp(2.1rem, 10vw, 3.2rem);
   }
 
   .opportunity-note,
   .role-grid article,
-  .partner-grid article {
+  .partner-grid article,
+  .service-steps article {
     padding: 22px 18px;
   }
 

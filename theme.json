@@ -20,6 +20,7 @@
     { "name": "model", "title": "What We Do", "area": "uncategorized" },
     { "name": "gap", "title": "Structural Gap", "area": "uncategorized" },
     { "name": "people", "title": "People & Careers", "area": "uncategorized" },
+    { "name": "services", "title": "Services", "area": "uncategorized" },
     { "name": "opportunities", "title": "Opportunities", "area": "uncategorized" },
     { "name": "contact", "title": "Contact", "area": "uncategorized" },
     { "name": "footer", "title": "Footer", "area": "footer" }
