@@ -2033,6 +2033,10 @@ p {
   line-height: 1.35;
 }
 
+.meeting-page .internal-main {
+  max-width: 980px;
+}
+
 @media (max-width: 960px) {
   .internal-shell {
     grid-template-columns: 1fr;
@@ -2062,5 +2066,50 @@ p {
   .intel-head,
   .intel-row {
     min-width: 860px;
+  }
+
+  .meeting-page .internal-shell {
+    padding-top: 92px;
+  }
+
+  .meeting-page .internal-main {
+    gap: 10px;
+  }
+
+  .meeting-page .internal-topbar {
+    padding: 12px 14px;
+  }
+
+  .meeting-page .internal-card {
+    padding: 12px;
+  }
+
+  .meeting-page .internal-card p,
+  .meeting-page .internal-card li {
+    font-size: 0.95rem;
+    line-height: 1.42;
+  }
+
+  .meeting-page .minutes-table {
+    border: 0;
+    background: transparent;
+    margin-top: 8px;
+  }
+
+  .meeting-page .minutes-head {
+    display: none;
+  }
+
+  .meeting-page .minutes-row {
+    display: block;
+    padding: 10px 12px;
+    margin-bottom: 8px;
+    border: 1px solid #d7dee7;
+    background: #fff;
+  }
+
+  .meeting-page .minutes-row strong {
+    display: inline-block;
+    margin-bottom: 6px;
   }
 }
