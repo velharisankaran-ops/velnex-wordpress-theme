@@ -1784,6 +1784,7 @@ p {
 .internal-main {
   display: grid;
   gap: 14px;
+  color: #1b2736;
 }
 
 .internal-topbar {
@@ -1809,6 +1810,7 @@ p {
   padding: 16px;
   background: #fff;
   border: 1px solid #d7dee7;
+  color: #1b2736;
 }
 
 .internal-card h2 {
@@ -1832,11 +1834,19 @@ p {
 .internal-card ol {
   margin: 0;
   padding-left: 1.2rem;
-  color: #2f3a49;
+  color: #1b2736;
+  line-height: 1.4;
 }
 
 .internal-card li + li {
-  margin-top: 8px;
+  margin-top: 5px;
+}
+
+.internal-card p {
+  margin: 0 0 8px;
+  color: #162231;
+  font-weight: 400;
+  line-height: 1.42;
 }
 
 .resource-matrix {
@@ -1879,9 +1889,9 @@ p {
 }
 
 .resource-row span {
-  color: #2f3a49;
+  color: #1e2a39;
   font-size: 0.92rem;
-  line-height: 1.4;
+  line-height: 1.35;
 }
 
 .intel-table {
@@ -1924,9 +1934,9 @@ p {
 }
 
 .intel-row span {
-  color: #2f3a49;
+  color: #1e2a39;
   font-size: 0.92rem;
-  line-height: 1.4;
+  line-height: 1.35;
 }
 
 .internal-grid,
@@ -1976,8 +1986,51 @@ p {
 }
 
 .internal-checklist li {
-  color: #263242;
+  color: #1b2736;
   font-weight: 500;
+}
+
+.minutes-table {
+  margin-top: 10px;
+  border: 1px solid #d7dee7;
+  background: #d7dee7;
+}
+
+.minutes-head,
+.minutes-row {
+  display: grid;
+  grid-template-columns: 72px minmax(0, 1fr);
+  gap: 10px;
+  padding: 10px 12px;
+}
+
+.minutes-head {
+  background: #e9edf3;
+}
+
+.minutes-head span {
+  color: #44566d;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.minutes-row {
+  background: #fff;
+  border-top: 1px solid #d7dee7;
+}
+
+.minutes-row strong {
+  color: #1e2a39;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.minutes-row span {
+  color: #1e2a39;
+  font-size: 0.92rem;
+  line-height: 1.35;
 }
 
 @media (max-width: 960px) {
