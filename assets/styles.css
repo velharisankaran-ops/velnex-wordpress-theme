@@ -1721,6 +1721,10 @@ p {
   grid-template-columns: 280px minmax(0, 1fr);
   gap: 20px;
   padding-top: 112px;
+  padding-right: 12px;
+  padding-left: 12px;
+  max-width: 1260px;
+  margin: 0 auto;
   background: #eef1f4;
 }
 
@@ -1785,6 +1789,7 @@ p {
   display: grid;
   gap: 14px;
   color: #1b2736;
+  min-width: 0;
 }
 
 .internal-topbar {
@@ -1892,6 +1897,7 @@ p {
   color: #1e2a39;
   font-size: 0.92rem;
   line-height: 1.35;
+  overflow-wrap: anywhere;
 }
 
 .intel-table {
@@ -1937,6 +1943,7 @@ p {
   color: #1e2a39;
   font-size: 0.92rem;
   line-height: 1.35;
+  overflow-wrap: anywhere;
 }
 
 .internal-grid,
@@ -2031,6 +2038,7 @@ p {
   color: #1e2a39;
   font-size: 0.92rem;
   line-height: 1.35;
+  overflow-wrap: anywhere;
 }
 
 .meeting-page .internal-main {
@@ -2040,11 +2048,15 @@ p {
 @media (max-width: 960px) {
   .internal-shell {
     grid-template-columns: 1fr;
-    padding-top: 98px;
+    padding-top: 20px;
+    gap: 12px;
+    padding-right: 10px;
+    padding-left: 10px;
   }
 
   .internal-sidebar {
     position: static;
+    padding: 12px;
   }
 
   .internal-topbar {
@@ -2052,24 +2064,48 @@ p {
     align-items: stretch;
   }
 
-  .resource-head,
   .internal-grid,
   .internal-checks {
     grid-template-columns: 1fr;
   }
+  
+  /* Internal pages: convert tables to stacked cards on mobile */
+  .resource-matrix,
+  .intel-table {
+    border: 0;
+    background: transparent;
+    overflow: visible;
+  }
 
   .resource-head,
-  .resource-row {
-    min-width: 980px;
+  .intel-head {
+    display: none;
   }
 
-  .intel-head,
+  .resource-row,
   .intel-row {
-    min-width: 860px;
+    display: block;
+    min-width: 0;
+    padding: 10px 12px;
+    margin-bottom: 8px;
+    border: 1px solid #d7dee7;
+    background: #fff;
   }
 
-  .meeting-page .internal-shell {
-    padding-top: 92px;
+  .resource-row strong,
+  .intel-row strong {
+    display: inline-block;
+    margin-bottom: 6px;
+  }
+
+  .resource-row span,
+  .intel-row span {
+    display: block;
+    margin-top: 4px;
+  }
+
+  .meeting-page.internal-shell {
+    padding-top: 20px;
   }
 
   .meeting-page .internal-main {
@@ -2111,5 +2147,10 @@ p {
   .meeting-page .minutes-row strong {
     display: inline-block;
     margin-bottom: 6px;
+  }
+
+  .minutes-row span {
+    display: block;
+    margin-top: 4px;
   }
 }
