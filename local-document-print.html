@@ -1,0 +1,478 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Velnex Print Document Preview</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Source+Sans+3:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <main id="top">
+    <section class="doc-print-shell" id="doc-print">
+      <div class="doc-print-toolbar">
+        <button type="button" class="button secondary" onclick="window.print()">Print / Save PDF</button>
+      </div>
+
+      <article class="doc-page cover-page">
+        <img
+          class="letterhead-bg"
+          src="https://velnex.in/wp-content/uploads/2026/03/Letter-Head-Velnex.png"
+          alt="Letterhead background"
+        />
+        <div class="doc-content">
+          <p class="doc-kicker">Internal Document</p>
+          <h1>Velnex Strategic Document</h1>
+          <p class="doc-subtitle">Cover Page</p>
+
+          <div class="doc-meta">
+            <p><strong>Company:</strong> Velnex Business Management &amp; Operations</p>
+            <p><strong>Date:</strong> [Insert Date]</p>
+            <p><strong>Version:</strong> [v1.0]</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="doc-page toc-page">
+        <img
+          class="letterhead-bg"
+          src="https://velnex.in/wp-content/uploads/2026/03/Letter-Head-Velnex.png"
+          alt="Letterhead background"
+        />
+        <div class="doc-content">
+          <h2>Table of Contents</h2>
+          <ol class="toc-list">
+            <li><div class="toc-main"><strong>Core Structure of Velnex</strong><span class="toc-dots"></span><span class="toc-page">4</span></div>
+              <ul>
+                <li>Vision and operating model</li>
+                <li>Service architecture (what Velnex manages vs what partners execute)</li>
+                <li>Revenue architecture (consulting fee, oversight fee, execution fee, profit-share, equity path)</li>
+                <li>Governance model (who decides what)</li>
+                <li>Risk and control model</li>
+              </ul>
+            </li>
+            <li><div class="toc-main"><strong>People Structure</strong><span class="toc-dots"></span><span class="toc-page">5</span></div>
+              <ul>
+                <li>Founder/leadership roles</li>
+                <li>Core team (fixed responsibility owners)</li>
+                <li>Employees (full-time / part-time)</li>
+                <li>Partner network (strategic partners)</li>
+                <li>Vendors/freelancers/specialists</li>
+                <li>For each role type: role purpose, decision rights, deliverables, reporting line, performance metrics, replacement backup</li>
+              </ul>
+            </li>
+            <li><div class="toc-main"><strong>Engagement Types (Who Gets Paid How)</strong><span class="toc-dots"></span><span class="toc-page">6</span></div>
+              <ul>
+                <li>Salary model (fixed monthly)</li>
+                <li>Project fee model (fixed scope)</li>
+                <li>Retainer model (monthly recurring support)</li>
+                <li>Rate card model (unit/hour basis)</li>
+                <li>Performance-linked payout (bonus/profit share)</li>
+                <li>Hybrid model (fixed + variable)</li>
+              </ul>
+            </li>
+            <li><div class="toc-main"><strong>Agreement Types (By Participant)</strong><span class="toc-dots"></span><span class="toc-page">7</span></div>
+              <ul>
+                <li>Employee agreement</li>
+                <li>Partner MoU / strategic alliance agreement</li>
+                <li>Vendor contract (project / retainer / rate card)</li>
+                <li>Consultant/freelancer contract</li>
+                <li>NDA + confidentiality addendum</li>
+                <li>IP ownership and handover clauses</li>
+              </ul>
+            </li>
+            <li><div class="toc-main"><strong>Internal Cost Stack (Before Client Quote)</strong><span class="toc-dots"></span><span class="toc-page">8</span></div>
+              <ul>
+                <li>Direct execution cost: internal time cost, vendor/partner payout, tools/software, travel/site visits</li>
+                <li>Indirect overhead cost: admin, management, reporting, buffer</li>
+                <li>Risk reserve: rework, delay risk, quality correction risk</li>
+                <li>Target margin: minimum margin threshold, ideal margin threshold</li>
+              </ul>
+            </li>
+          </ol>
+        </div>
+      </article>
+
+      <article class="doc-page toc-page">
+        <img
+          class="letterhead-bg"
+          src="https://velnex.in/wp-content/uploads/2026/03/Letter-Head-Velnex.png"
+          alt="Letterhead background"
+        />
+        <div class="doc-content">
+          <h2>Table of Contents (Cont.)</h2>
+          <ol class="toc-list" start="6">
+            <li><div class="toc-main"><strong>Client Pricing Framework (How to Quote)</strong><span class="toc-dots"></span><span class="toc-page">9</span></div>
+              <ul>
+                <li>Quote formula: Client Quote = Direct Cost + Overhead Allocation + Risk Reserve + Margin</li>
+                <li>Milestone-wise billing structure</li>
+                <li>Tax and compliance additions</li>
+                <li>Payment terms (advance/mid/final)</li>
+                <li>Change-request pricing logic</li>
+                <li>Late-payment policy</li>
+              </ul>
+            </li>
+            <li><div class="toc-main"><strong>Example Business Client Blueprint</strong><span class="toc-dots"></span><span class="toc-page">10</span></div>
+              <ul>
+                <li>Client profile and issues</li>
+                <li>Service scope and ownership split (Velnex / Vendor / Partner)</li>
+                <li>Cost stack and final quote logic</li>
+                <li>Client payment terms and vendor payout structure</li>
+                <li>Margin and break-even view</li>
+              </ul>
+            </li>
+            <li><div class="toc-main"><strong>Scenario Matrix (Must Document)</strong><span class="toc-dots"></span><span class="toc-page">11</span></div>
+              <ul>
+                <li>Client approves study, rejects execution</li>
+                <li>Client approves execution, delays payment</li>
+                <li>Vendor delay or non-performance</li>
+                <li>Scope increases mid-project</li>
+                <li>Quality failure and rework</li>
+                <li>Team member exit during project</li>
+                <li>Client requests discount</li>
+                <li>Partner conflict on ownership of deliverables</li>
+                <li>Project success -> profit-share/equity discussion</li>
+                <li>Project closure with dispute</li>
+                <li>For each scenario: trigger, decision owner, response steps, financial impact, legal/contract clause used, escalation path</li>
+              </ul>
+            </li>
+            <li><div class="toc-main"><strong>Decision Rights Matrix (RACI)</strong><span class="toc-dots"></span><span class="toc-page">12</span></div>
+              <ul>
+                <li>Define for each major decision: who recommends, who approves, who executes, who must be informed</li>
+                <li>Areas: pricing, vendor selection, contract signoff, payment release, change requests, dispute closure</li>
+              </ul>
+            </li>
+            <li><div class="toc-main"><strong>Financial Control Documents</strong><span class="toc-dots"></span><span class="toc-page">13</span></div>
+              <ul>
+                <li>Vendor payout tracker</li>
+                <li>Client receivable tracker</li>
+                <li>Project margin tracker</li>
+                <li>Cash runway tracker</li>
+                <li>Monthly P&amp;L by project</li>
+                <li>Budget vs actual report</li>
+              </ul>
+            </li>
+          </ol>
+        </div>
+      </article>
+
+      <article class="doc-page toc-page">
+        <img
+          class="letterhead-bg"
+          src="https://velnex.in/wp-content/uploads/2026/03/Letter-Head-Velnex.png"
+          alt="Letterhead background"
+        />
+        <div class="doc-content">
+          <h2>Table of Contents (Cont.)</h2>
+          <ol class="toc-list" start="10">
+            <li><div class="toc-main"><strong>Execution SOP Pack</strong><span class="toc-dots"></span><span class="toc-page">14</span></div>
+              <ul>
+                <li>Lead qualification SOP</li>
+                <li>Discovery/business study SOP</li>
+                <li>Proposal and quotation SOP</li>
+                <li>Contracting SOP</li>
+                <li>Vendor onboarding SOP</li>
+                <li>Weekly review SOP</li>
+                <li>Client reporting SOP</li>
+                <li>Project closure SOP</li>
+              </ul>
+            </li>
+            <li><div class="toc-main"><strong>Dashboard Data Model (Platform-ready)</strong><span class="toc-dots"></span><span class="toc-page">15</span></div>
+              <ul>
+                <li>Entities: Client, Project, Contract, Team member, Vendor/Partner, Milestone, Invoice, Payment, Risk issue, Change request</li>
+              </ul>
+            </li>
+            <li><div class="toc-main"><strong>Build Order (Practical)</strong><span class="toc-dots"></span><span class="toc-page">16</span></div>
+              <ul>
+                <li>Decision rights matrix</li>
+                <li>Cost stack + pricing model</li>
+                <li>Contract templates</li>
+                <li>Scenario matrix</li>
+                <li>SOP pack</li>
+                <li>Dashboard structure</li>
+              </ul>
+            </li>
+          </ol>
+        </div>
+      </article>
+
+      <article class="doc-page content-page">
+        <img
+          class="letterhead-bg"
+          src="https://velnex.in/wp-content/uploads/2026/03/Letter-Head-Velnex.png"
+          alt="Letterhead background"
+        />
+        <div class="doc-content">
+          <div class="toc-main" style="margin-bottom:10px;">
+            <strong>Core Structure of Velnex</strong>
+            <span class="toc-dots"></span>
+            <span class="toc-page">4</span>
+          </div>
+          <h2 style="color:#111;margin-top:0;">Vision and operating model</h2>
+          <table class="doc-table">
+            <tr>
+              <th>Component</th>
+              <th>Definition</th>
+              <th>How it is applied</th>
+            </tr>
+            <tr>
+              <td>Access</td>
+              <td>Entry into active businesses through diagnosis and management mandates.</td>
+              <td>Start with study, planning, and coordination support.</td>
+            </tr>
+            <tr>
+              <td>Management Influence</td>
+              <td>Control of execution structure, workflow discipline, and accountability rhythm.</td>
+              <td>Weekly tracking, owner assignments, milestone control.</td>
+            </tr>
+            <tr>
+              <td>Decision Influence</td>
+              <td>Participation in operating and strategic decisions through proven execution control.</td>
+              <td>Structured reporting and decision-ready business reviews.</td>
+            </tr>
+            <tr>
+              <td>Economic Participation</td>
+              <td>Profit-linked upside after delivery proof.</td>
+              <td>Performance-based participation models.</td>
+            </tr>
+            <tr>
+              <td>Ownership Path</td>
+              <td>Long-horizon shareholding based on alignment and sustained value creation.</td>
+              <td>Move from service to strategic participation to ownership discussion.</td>
+            </tr>
+          </table>
+          <h2 style="color:#111;">Service architecture (what Velnex manages vs what partners execute)</h2>
+          <table class="doc-table">
+            <tr>
+              <th>Layer</th>
+              <th>Owned by Velnex</th>
+              <th>Executed by Partners/Vendors</th>
+              <th>Control method</th>
+            </tr>
+            <tr>
+              <td>Business Diagnosis</td>
+              <td>Current-state review, gap mapping, risk mapping.</td>
+              <td>Data/input support where needed.</td>
+              <td>Diagnosis checklist and signoff.</td>
+            </tr>
+            <tr>
+              <td>Planning</td>
+              <td>Department plan, priority sequencing, target outcomes.</td>
+              <td>Technical feasibility inputs.</td>
+              <td>Plan approval workflow.</td>
+            </tr>
+            <tr>
+              <td>Execution Design</td>
+              <td>Scope split, owner mapping, timeline and cadence.</td>
+              <td>Domain deliverables (design, media, tech, ops, etc.).</td>
+              <td>Milestone tracker and SLA.</td>
+            </tr>
+            <tr>
+              <td>Monitoring</td>
+              <td>Weekly review, issue escalation, correction actions.</td>
+              <td>Status updates and revision delivery.</td>
+              <td>KPI dashboard and review log.</td>
+            </tr>
+            <tr>
+              <td>Outcome Accountability</td>
+              <td>Final business outcome responsibility to client.</td>
+              <td>Task-level output accountability.</td>
+              <td>Closure review and variance report.</td>
+            </tr>
+          </table>
+          <p>
+            This architecture ensures the client deals with one accountable management layer (Velnex), while specialized
+            work is delivered by vetted execution partners under controlled scope, payment, and reporting terms.
+          </p>
+          <h2 style="color:#111;">Revenue architecture</h2>
+          <table class="doc-table">
+            <tr><th>Revenue type</th><th>When used</th><th>Billing logic</th></tr>
+            <tr><td>Consulting fee</td><td>Business study/diagnosis only</td><td>Fixed fee per study mandate</td></tr>
+            <tr><td>Oversight fee</td><td>Execution monitoring role</td><td>Monthly or milestone oversight charge</td></tr>
+            <tr><td>Execution fee</td><td>Managed implementation</td><td>Project-based milestone billing</td></tr>
+            <tr><td>Profit-share</td><td>After proven impact</td><td>Agreed % of measurable net outcome</td></tr>
+            <tr><td>Equity path</td><td>Long-term strategic alignment</td><td>Negotiated stake based on value contribution</td></tr>
+          </table>
+          <h2 style="color:#111;">Governance model</h2>
+          <p>Decision hierarchy: Founder/Leadership -> Functional Owner -> Project Owner -> Vendor/Partner Executor. All major changes in scope, budget, and timeline require documented approval.</p>
+          <h2 style="color:#111;">Risk and control model</h2>
+          <table class="doc-table">
+            <tr><th>Risk area</th><th>Control action</th><th>Owner</th></tr>
+            <tr><td>Scope drift</td><td>Change request log and priced approvals</td><td>Project Owner</td></tr>
+            <tr><td>Payment delay</td><td>Advance + milestone release gating</td><td>Finance</td></tr>
+            <tr><td>Vendor quality gap</td><td>SLA, acceptance checklist, retention</td><td>Delivery Lead</td></tr>
+            <tr><td>Reporting gap</td><td>Weekly KPI and variance reviews</td><td>Ops Lead</td></tr>
+          </table>
+        </div>
+      </article>
+
+      <article class="doc-page content-page">
+        <img class="letterhead-bg" src="https://velnex.in/wp-content/uploads/2026/03/Letter-Head-Velnex.png" alt="Letterhead background" />
+        <div class="doc-content">
+          <div class="toc-main" style="margin-bottom:10px;"><strong>People Structure</strong><span class="toc-dots"></span><span class="toc-page">5</span></div>
+          <table class="doc-table">
+            <tr><th>Role layer</th><th>Purpose</th><th>Decision rights</th><th>Primary outputs</th></tr>
+            <tr><td>Founder/Leadership</td><td>Direction and strategic control</td><td>Final approval</td><td>Strategy, partnerships, governance</td></tr>
+            <tr><td>Core Team</td><td>Department ownership</td><td>Operational approval</td><td>Execution plans and weekly tracking</td></tr>
+            <tr><td>Employees</td><td>Consistent execution support</td><td>Task-level decisions</td><td>Department outputs</td></tr>
+            <tr><td>Partners</td><td>Specialized strategic support</td><td>Scope-constrained</td><td>Domain outcomes</td></tr>
+            <tr><td>Vendors/Freelancers</td><td>Delivery capacity</td><td>No policy decisions</td><td>Task deliverables</td></tr>
+          </table>
+          <h2 style="color:#111;">Role definition standard</h2>
+          <ul class="doc-list">
+            <li>Role purpose</li><li>Decision rights</li><li>Deliverables</li><li>Reporting line</li><li>Performance metrics</li><li>Replacement backup</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="doc-page content-page">
+        <img class="letterhead-bg" src="https://velnex.in/wp-content/uploads/2026/03/Letter-Head-Velnex.png" alt="Letterhead background" />
+        <div class="doc-content">
+          <div class="toc-main" style="margin-bottom:10px;"><strong>Engagement Types (Who Gets Paid How)</strong><span class="toc-dots"></span><span class="toc-page">6</span></div>
+          <table class="doc-table">
+            <tr><th>Type</th><th>Use case</th><th>Payout structure</th></tr>
+            <tr><td>Salary</td><td>Core employees</td><td>Fixed monthly</td></tr>
+            <tr><td>Project fee</td><td>Defined scope work</td><td>Milestone-based</td></tr>
+            <tr><td>Retainer</td><td>Ongoing support</td><td>Monthly fixed</td></tr>
+            <tr><td>Rate card</td><td>Variable tasks</td><td>Unit/hour based</td></tr>
+            <tr><td>Performance-linked</td><td>Outcome-linked mandates</td><td>Base + incentive/profit-share</td></tr>
+            <tr><td>Hybrid</td><td>Mixed projects</td><td>Fixed + variable</td></tr>
+          </table>
+          <div class="toc-main" style="margin:10px 0;"><strong>Agreement Types (By Participant)</strong><span class="toc-dots"></span><span class="toc-page">7</span></div>
+          <ul class="doc-list">
+            <li>Employee Agreement</li><li>Partner MoU</li><li>Vendor Project/Retainer Contract</li><li>Consultant/Freelancer Contract</li><li>NDA and confidentiality addendum</li><li>IP ownership and handover clauses</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="doc-page content-page">
+        <img class="letterhead-bg" src="https://velnex.in/wp-content/uploads/2026/03/Letter-Head-Velnex.png" alt="Letterhead background" />
+        <div class="doc-content">
+          <div class="toc-main" style="margin-bottom:10px;"><strong>Internal Cost Stack (Before Client Quote)</strong><span class="toc-dots"></span><span class="toc-page">8</span></div>
+          <table class="doc-table">
+            <tr><th>Cost block</th><th>Includes</th><th>Control rule</th></tr>
+            <tr><td>Direct execution</td><td>Internal time, vendor payout, tools, travel</td><td>Mapped to project scope</td></tr>
+            <tr><td>Indirect overhead</td><td>Admin, management, reporting, buffer</td><td>Allocated by project size</td></tr>
+            <tr><td>Risk reserve</td><td>Rework, delay, quality correction</td><td>Mandatory contingency</td></tr>
+            <tr><td>Target margin</td><td>Minimum and ideal thresholds</td><td>Quote must clear minimum</td></tr>
+          </table>
+          <div class="toc-main" style="margin:10px 0;"><strong>Client Pricing Framework (How to Quote)</strong><span class="toc-dots"></span><span class="toc-page">9</span></div>
+          <p><strong>Client Quote = Direct Cost + Overhead Allocation + Risk Reserve + Margin</strong></p>
+          <ul class="doc-list">
+            <li>Milestone billing structure</li><li>Tax and compliance additions</li><li>Payment terms: advance/mid/final</li><li>Change request pricing</li><li>Late payment policy</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="doc-page content-page">
+        <img class="letterhead-bg" src="https://velnex.in/wp-content/uploads/2026/03/Letter-Head-Velnex.png" alt="Letterhead background" />
+        <div class="doc-content">
+          <div class="toc-main" style="margin-bottom:10px;"><strong>Example Business Client Blueprint</strong><span class="toc-dots"></span><span class="toc-page">10</span></div>
+          <table class="doc-table">
+            <tr><th>Client Profile (Example)</th><th>Details</th></tr>
+            <tr><td>Industry</td><td>Multi-specialty clinic chain (3 branches)</td></tr>
+            <tr><td>Current issues</td><td>Founder overload, weak follow-up, disconnected vendors, no weekly reporting</td></tr>
+            <tr><td>Target outcome</td><td>System-driven execution and predictable monthly performance</td></tr>
+          </table>
+          <table class="doc-table">
+            <tr><th>Workstream</th><th>Velnex role</th><th>Vendor/Partner role</th><th>Owner</th></tr>
+            <tr><td>Business diagnosis</td><td>Lead full assessment</td><td>Data/input support</td><td>Velnex</td></tr>
+            <tr><td>Marketing</td><td>Plan, KPI control, review cadence</td><td>Campaign execution</td><td>Partner Agency</td></tr>
+            <tr><td>Operations</td><td>SOP setup and accountability mapping</td><td>Implementation support</td><td>Velnex + Ops Partner</td></tr>
+            <tr><td>Finance reporting</td><td>Dashboard design and weekly review</td><td>Bookkeeping data support</td><td>Velnex + Finance Vendor</td></tr>
+          </table>
+          <table class="doc-table">
+            <tr><th>Pricing Build-up (Example)</th><th>Amount (AED)</th></tr>
+            <tr><td>Direct vendor execution cost</td><td>42,000</td></tr>
+            <tr><td>Velnex management/oversight fee</td><td>18,000</td></tr>
+            <tr><td>Overhead allocation</td><td>6,000</td></tr>
+            <tr><td>Risk reserve</td><td>4,000</td></tr>
+            <tr><td>Target margin</td><td>10,000</td></tr>
+            <tr><th>Final Client Quote</th><th>80,000</th></tr>
+          </table>
+          <table class="doc-table">
+            <tr><th>Payment Flow</th><th>Structure</th></tr>
+            <tr><td>Client -> Velnex</td><td>40% advance, 30% midpoint, 30% final milestone</td></tr>
+            <tr><td>Velnex -> Vendors</td><td>30% start, 40% midpoint, 30% final acceptance (retention if needed)</td></tr>
+            <tr><td>Control</td><td>No payout without deliverable acceptance and finance verification</td></tr>
+          </table>
+        </div>
+      </article>
+
+      <article class="doc-page content-page">
+        <img class="letterhead-bg" src="https://velnex.in/wp-content/uploads/2026/03/Letter-Head-Velnex.png" alt="Letterhead background" />
+        <div class="doc-content">
+          <div class="toc-main" style="margin-bottom:10px;"><strong>Scenario Matrix (Must Document)</strong><span class="toc-dots"></span><span class="toc-page">11</span></div>
+          <table class="doc-table">
+            <tr><th>Scenario</th><th>Trigger</th><th>Decision owner</th><th>Response</th></tr>
+            <tr><td>Study approved, execution rejected</td><td>Client pause</td><td>Founder + Sales</td><td>Close with study fee and follow-up option</td></tr>
+            <tr><td>Execution approved, payment delayed</td><td>Milestone overdue</td><td>Finance</td><td>Hold next deliverable until payment release</td></tr>
+            <tr><td>Vendor non-performance</td><td>SLA miss</td><td>Delivery Lead</td><td>Escalate/replace vendor</td></tr>
+            <tr><td>Scope increase</td><td>New request</td><td>Project Owner</td><td>Change request + revised quote</td></tr>
+            <tr><td>Quality failure</td><td>Acceptance fail</td><td>QA/Owner</td><td>Rework cycle and penalty logic</td></tr>
+          </table>
+          <p>For every scenario record: trigger, owner, response steps, financial impact, legal clause, escalation path.</p>
+        </div>
+      </article>
+
+      <article class="doc-page content-page">
+        <img class="letterhead-bg" src="https://velnex.in/wp-content/uploads/2026/03/Letter-Head-Velnex.png" alt="Letterhead background" />
+        <div class="doc-content">
+          <div class="toc-main" style="margin-bottom:10px;"><strong>Decision Rights Matrix (RACI)</strong><span class="toc-dots"></span><span class="toc-page">12</span></div>
+          <table class="doc-table">
+            <tr><th>Area</th><th>Recommends</th><th>Approves</th><th>Executes</th><th>Informed</th></tr>
+            <tr><td>Pricing</td><td>Project Owner</td><td>Founder</td><td>Finance</td><td>Sales</td></tr>
+            <tr><td>Vendor selection</td><td>Delivery Lead</td><td>Founder/Ops</td><td>Ops</td><td>Finance</td></tr>
+            <tr><td>Contract signoff</td><td>Ops + Legal</td><td>Founder</td><td>Ops</td><td>Finance</td></tr>
+            <tr><td>Payment release</td><td>Project Owner</td><td>Finance Head</td><td>Finance</td><td>Founder</td></tr>
+            <tr><td>Dispute closure</td><td>Ops</td><td>Founder</td><td>Ops/Legal</td><td>All stakeholders</td></tr>
+          </table>
+        </div>
+      </article>
+
+      <article class="doc-page content-page">
+        <img class="letterhead-bg" src="https://velnex.in/wp-content/uploads/2026/03/Letter-Head-Velnex.png" alt="Letterhead background" />
+        <div class="doc-content">
+          <div class="toc-main" style="margin-bottom:10px;"><strong>Financial Control Documents</strong><span class="toc-dots"></span><span class="toc-page">13</span></div>
+          <ul class="doc-list">
+            <li>Vendor payout tracker</li><li>Client receivable tracker</li><li>Project margin tracker</li><li>Cash runway tracker</li><li>Monthly P&amp;L by project</li><li>Budget vs actual report</li>
+          </ul>
+          <div class="toc-main" style="margin:12px 0;"><strong>Execution SOP Pack</strong><span class="toc-dots"></span><span class="toc-page">14</span></div>
+          <ul class="doc-list">
+            <li>Lead qualification SOP</li><li>Discovery/business study SOP</li><li>Proposal/quotation SOP</li><li>Contracting SOP</li><li>Vendor onboarding SOP</li><li>Weekly review SOP</li><li>Client reporting SOP</li><li>Project closure SOP</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="doc-page content-page">
+        <img class="letterhead-bg" src="https://velnex.in/wp-content/uploads/2026/03/Letter-Head-Velnex.png" alt="Letterhead background" />
+        <div class="doc-content">
+          <div class="toc-main" style="margin-bottom:10px;"><strong>Dashboard Data Model (Platform-ready)</strong><span class="toc-dots"></span><span class="toc-page">15</span></div>
+          <table class="doc-table">
+            <tr><th>Entity</th><th>Purpose</th></tr>
+            <tr><td>Client</td><td>Account owner and business profile</td></tr>
+            <tr><td>Project</td><td>Mandate scope and status</td></tr>
+            <tr><td>Contract</td><td>Commercial and legal terms</td></tr>
+            <tr><td>Team Member</td><td>Ownership and assignment</td></tr>
+            <tr><td>Vendor/Partner</td><td>External execution and SLA</td></tr>
+            <tr><td>Milestone/Invoice/Payment</td><td>Delivery and cashflow control</td></tr>
+            <tr><td>Risk issue/Change request</td><td>Governance and variance control</td></tr>
+          </table>
+          <div class="toc-main" style="margin:12px 0;"><strong>Build Order (Practical)</strong><span class="toc-dots"></span><span class="toc-page">16</span></div>
+          <ol class="doc-list">
+            <li>Decision rights matrix</li>
+            <li>Cost stack + pricing model</li>
+            <li>Contract templates</li>
+            <li>Scenario matrix</li>
+            <li>SOP pack</li>
+            <li>Dashboard structure</li>
+          </ol>
+        </div>
+      </article>
+    </section>
+  </main>
+</body>
+</html>
+
