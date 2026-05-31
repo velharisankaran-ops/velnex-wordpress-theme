@@ -1,0 +1,22 @@
+<!-- wp:html -->
+<main class="vx-app">
+  <section class="vx-auth vx-form-screen">
+    <form class="vx-panel vx-onboard-form" data-vx-redirect="/pending-approval/">
+      <a class="vx-back" href="/request-access/">Back</a>
+      <p class="vx-eyebrow">Business client request</p>
+      <h2>Business onboarding form</h2>
+      <div class="vx-form-grid">
+        <label class="vx-field"><span>Business name</span><input name="business_name" required /></label>
+        <label class="vx-field"><span>Industry / sector</span><input name="sector" required /></label>
+        <label class="vx-field"><span>Location</span><input name="location" required /></label>
+        <label class="vx-field"><span>Business stage</span><input name="stage" placeholder="Early / growing / established" /></label>
+        <label class="vx-field"><span>Contact person</span><input name="contact" required /></label>
+        <label class="vx-field"><span>Phone / WhatsApp</span><input name="phone" required /></label>
+        <label class="vx-field vx-span-2"><span>Current problems</span><textarea name="problems" required></textarea></label>
+        <label class="vx-field vx-span-2"><span>Services needed</span><textarea name="services" required></textarea></label>
+      </div>
+      <button class="vx-primary" type="submit">Submit for review</button>
+    </form>
+  </section>
+</main>
+<!-- /wp:html -->

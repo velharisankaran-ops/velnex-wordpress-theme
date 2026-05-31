@@ -1,0 +1,22 @@
+<!-- wp:html -->
+<main class="vx-app">
+  <section class="vx-auth vx-form-screen">
+    <form class="vx-panel vx-onboard-form" data-vx-redirect="/pending-approval/">
+      <a class="vx-back" href="/request-access/">Back</a>
+      <p class="vx-eyebrow">Investor client request</p>
+      <h2>Investor onboarding form</h2>
+      <div class="vx-form-grid">
+        <label class="vx-field"><span>Investor / company name</span><input name="investor_name" required /></label>
+        <label class="vx-field"><span>Investor type</span><input name="investor_type" placeholder="Individual / company / fund" required /></label>
+        <label class="vx-field"><span>Location</span><input name="location" required /></label>
+        <label class="vx-field"><span>Capital range</span><input name="capital_range" /></label>
+        <label class="vx-field"><span>Sectors of interest</span><input name="sectors" required /></label>
+        <label class="vx-field"><span>Mandate type</span><input name="mandate" placeholder="Pre-investment / post-investment" /></label>
+        <label class="vx-field vx-span-2"><span>Existing portfolio / interest</span><textarea name="portfolio"></textarea></label>
+        <label class="vx-field vx-span-2"><span>Reporting expectation</span><textarea name="reporting" required></textarea></label>
+      </div>
+      <button class="vx-primary" type="submit">Submit for review</button>
+    </form>
+  </section>
+</main>
+<!-- /wp:html -->

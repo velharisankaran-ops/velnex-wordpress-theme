@@ -1,0 +1,13 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/theme.json",
+  "version": 3,
+  "templateParts": [
+    { "name": "platform-login", "title": "Platform Login", "area": "uncategorized" },
+    { "name": "request-access", "title": "Request Access", "area": "uncategorized" },
+    { "name": "business-signup", "title": "Business Signup", "area": "uncategorized" },
+    { "name": "investor-signup", "title": "Investor Signup", "area": "uncategorized" },
+    { "name": "vendor-signup", "title": "Vendor Signup", "area": "uncategorized" },
+    { "name": "pending-approval", "title": "Pending Approval", "area": "uncategorized" },
+    { "name": "approved-flow", "title": "Approved Flow", "area": "uncategorized" }
+  ]
+}
