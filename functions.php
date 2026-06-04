@@ -81,6 +81,42 @@ function velnex_create_services_page() {
 add_action('after_switch_theme', 'velnex_create_services_page');
 add_action('init', 'velnex_create_services_page');
 
+function velnex_create_foundation_stage_page() {
+    $page = get_page_by_path('foundation-stage');
+
+    if ($page) {
+        return;
+    }
+
+    wp_insert_post(
+        array(
+            'post_title' => 'Foundation Stage',
+            'post_name' => 'foundation-stage',
+            'post_status' => 'publish',
+            'post_type' => 'page',
+            'post_content' => '',
+        )
+    );
+}
+add_action('after_switch_theme', 'velnex_create_foundation_stage_page');
+add_action('init', 'velnex_create_foundation_stage_page');
+
+function velnex_enqueue_foundation_stage_assets() {
+    if (!is_page('foundation-stage')) {
+        return;
+    }
+
+    $style_path = get_template_directory() . '/assets/foundation-stage.css';
+
+    wp_enqueue_style(
+        'velnex-foundation-stage',
+        get_template_directory_uri() . '/assets/foundation-stage.css',
+        array('velnex-site'),
+        file_exists($style_path) ? filemtime($style_path) : '1.0.0'
+    );
+}
+add_action('wp_enqueue_scripts', 'velnex_enqueue_foundation_stage_assets', 30);
+
 function velnex_home_seo_meta() {
     if (!is_front_page()) {
         return;
