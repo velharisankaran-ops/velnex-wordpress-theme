@@ -380,6 +380,44 @@
   background: var(--vx-line);
 }
 
+.vx-table-wrap {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.vx-handbook-table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  font-size: 0.92rem;
+}
+
+.vx-handbook-table th,
+.vx-handbook-table td {
+  border: 1px solid var(--vx-line);
+  padding: 10px;
+  text-align: left;
+  vertical-align: top;
+  line-height: 1.38;
+}
+
+.vx-handbook-table th {
+  width: 34%;
+  background: #f0f4f9;
+  color: var(--vx-brand);
+  font-weight: 800;
+}
+
+.vx-handbook-table td {
+  color: #263446;
+  background: #ffffff;
+}
+
+.vx-handbook-table thead th {
+  background: var(--vx-brand);
+  color: #ffffff;
+}
+
 @media (min-width: 861px) {
   .vx-foundation-app {
     padding: 32px 24px 110px;
@@ -428,5 +466,19 @@
   .vx-bottom-nav a {
     min-height: 50px;
     font-size: 0.72rem;
+  }
+
+  .vx-handbook-table {
+    table-layout: auto;
+    font-size: 0.86rem;
+  }
+
+  .vx-handbook-table th,
+  .vx-handbook-table td {
+    padding: 9px;
+  }
+
+  .vx-handbook-table th {
+    width: 38%;
   }
 }
