@@ -70,6 +70,7 @@ Current WordPress slugs:
 - `/vendor-signup/`
 - `/pending-approval/`
 - `/approved-flow/`
+- `/foundation-stage/`
 
 ## Current Architecture Decision
 
@@ -89,6 +90,7 @@ Current frontend flow:
 5. `/vendor-signup/`
 6. `/pending-approval/`
 7. `/approved-flow/`
+8. `/foundation-stage/`
 
 ## Internal Foundation Dashboard Direction
 
@@ -109,6 +111,13 @@ The internal dashboard is not public marketing content. It is for tracking:
 - expenses
 - weekly progress
 - documents
+
+Current mobile internal page:
+
+- Local preview: `local-foundation-stage.html`
+- WordPress slug: `/foundation-stage/`
+- Template: `templates/page-foundation-stage.html`
+- Part: `parts/foundation-stage.html`
 
 Important wording rule:
 

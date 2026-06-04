@@ -19,6 +19,7 @@ function velnex_platform_child_create_platform_pages() {
         'vendor-signup'    => 'Vendor Signup',
         'pending-approval' => 'Pending Approval',
         'approved-flow'    => 'Approved Flow',
+        'foundation-stage' => 'Foundation Stage',
     );
 
     foreach ($pages as $slug => $title) {
@@ -55,6 +56,7 @@ function velnex_platform_child_enqueue_assets() {
         'vendor-signup',
         'pending-approval',
         'approved-flow',
+        'foundation-stage',
     );
 
     if (!is_page($platform_pages)) {
