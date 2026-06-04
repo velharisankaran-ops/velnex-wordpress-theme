@@ -244,9 +244,42 @@
 }
 
 .vx-bottom-nav a:hover,
-.vx-bottom-nav a:focus {
+.vx-bottom-nav a:focus,
+.vx-bottom-nav a.is-active {
   color: var(--vx-accent);
   outline: none;
+}
+
+.vx-page-card-grid {
+  display: grid;
+  gap: 10px;
+}
+
+.vx-page-card-grid a {
+  display: block;
+  border: 1px solid var(--vx-line);
+  border-radius: 12px;
+  background: var(--vx-surface-soft);
+  padding: 13px;
+  text-decoration: none;
+}
+
+.vx-page-card-grid strong,
+.vx-page-card-grid span {
+  display: block;
+}
+
+.vx-page-card-grid strong {
+  color: #10151d;
+  font-size: 0.98rem;
+  line-height: 1.25;
+}
+
+.vx-page-card-grid span {
+  margin-top: 4px;
+  color: #5b6b82;
+  font-size: 0.9rem;
+  line-height: 1.35;
 }
 
 @media (min-width: 861px) {

@@ -81,28 +81,44 @@ function velnex_create_services_page() {
 add_action('after_switch_theme', 'velnex_create_services_page');
 add_action('init', 'velnex_create_services_page');
 
-function velnex_create_foundation_stage_page() {
-    $page = get_page_by_path('foundation-stage');
-
-    if ($page) {
-        return;
-    }
-
-    wp_insert_post(
-        array(
-            'post_title' => 'Foundation Stage',
-            'post_name' => 'foundation-stage',
-            'post_status' => 'publish',
-            'post_type' => 'page',
-            'post_content' => '',
-        )
+function velnex_create_foundation_stage_pages() {
+    $pages = array(
+        'foundation-stage' => 'Foundation Stage',
+        'foundation-team' => 'Foundation Team',
+        'foundation-investor' => 'Foundation Investor',
+        'foundation-cases' => 'Foundation Case Studies',
+        'foundation-actions' => 'Foundation Actions',
     );
+
+    foreach ($pages as $slug => $title) {
+        if (get_page_by_path($slug)) {
+            continue;
+        }
+
+        wp_insert_post(
+            array(
+                'post_title' => $title,
+                'post_name' => $slug,
+                'post_status' => 'publish',
+                'post_type' => 'page',
+                'post_content' => '',
+            )
+        );
+    }
 }
-add_action('after_switch_theme', 'velnex_create_foundation_stage_page');
-add_action('init', 'velnex_create_foundation_stage_page');
+add_action('after_switch_theme', 'velnex_create_foundation_stage_pages');
+add_action('init', 'velnex_create_foundation_stage_pages');
 
 function velnex_enqueue_foundation_stage_assets() {
-    if (!is_page('foundation-stage')) {
+    $foundation_pages = array(
+        'foundation-stage',
+        'foundation-team',
+        'foundation-investor',
+        'foundation-cases',
+        'foundation-actions',
+    );
+
+    if (!is_page($foundation_pages)) {
         return;
     }
 
