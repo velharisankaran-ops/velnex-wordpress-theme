@@ -15,6 +15,7 @@
 }
 
 .vx-foundation-hero,
+.vx-handbook-hero,
 .vx-mobile-section {
   max-width: 760px;
   margin: 0 auto 14px;
@@ -24,7 +25,8 @@
   box-shadow: 0 10px 24px rgba(15, 23, 36, 0.06);
 }
 
-.vx-foundation-hero {
+.vx-foundation-hero,
+.vx-handbook-hero {
   padding: 18px;
   background: linear-gradient(140deg, rgba(12, 47, 102, 0.96), rgba(22, 79, 158, 0.88)), #0c2f66;
   color: #ffffff;
@@ -282,12 +284,109 @@
   line-height: 1.35;
 }
 
+.vx-handbook-block,
+.vx-handbook-grid article,
+.vx-resource-list div,
+.vx-timeline div,
+.vx-dashboard-questions div {
+  border: 1px solid var(--vx-line);
+  border-radius: 12px;
+  background: var(--vx-surface-soft);
+  padding: 12px;
+}
+
+.vx-handbook-block {
+  margin-top: 10px;
+}
+
+.vx-handbook-block:first-of-type {
+  margin-top: 0;
+}
+
+.vx-handbook-block h3,
+.vx-handbook-grid h3 {
+  margin: 0 0 8px;
+  color: var(--vx-brand);
+  font-size: 0.98rem;
+  line-height: 1.25;
+  font-weight: 750;
+}
+
+.vx-handbook-block p,
+.vx-handbook-grid p,
+.vx-handbook-block li,
+.vx-resource-list span,
+.vx-timeline strong,
+.vx-dashboard-questions span {
+  color: #263446;
+  font-size: 0.94rem;
+  line-height: 1.42;
+}
+
+.vx-handbook-block ul {
+  margin: 0;
+  padding-left: 18px;
+}
+
+.vx-handbook-grid,
+.vx-resource-list,
+.vx-timeline,
+.vx-dashboard-questions {
+  display: grid;
+  gap: 9px;
+}
+
+.vx-handbook-grid {
+  margin-top: 10px;
+}
+
+.vx-resource-list strong,
+.vx-timeline span,
+.vx-dashboard-questions strong {
+  display: block;
+  margin-bottom: 4px;
+  color: #10151d;
+  font-size: 0.92rem;
+  line-height: 1.25;
+  font-weight: 800;
+}
+
+.vx-flow-list {
+  display: grid;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.vx-flow-list span {
+  position: relative;
+  display: block;
+  border: 1px solid var(--vx-line);
+  border-radius: 999px;
+  background: #ffffff;
+  padding: 9px 12px;
+  color: #263446;
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.vx-flow-list span:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  width: 1px;
+  height: 8px;
+  background: var(--vx-line);
+}
+
 @media (min-width: 861px) {
   .vx-foundation-app {
     padding: 32px 24px 110px;
   }
 
   .vx-foundation-hero,
+  .vx-handbook-hero,
   .vx-mobile-section,
   .vx-bottom-nav {
     max-width: 860px;
@@ -304,6 +403,7 @@
   }
 
   .vx-foundation-hero,
+  .vx-handbook-hero,
   .vx-mobile-section {
     border-radius: 14px;
     padding: 14px;

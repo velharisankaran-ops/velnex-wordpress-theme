@@ -84,10 +84,6 @@ add_action('init', 'velnex_create_services_page');
 function velnex_create_foundation_stage_pages() {
     $pages = array(
         'foundation-stage' => 'Foundation Stage',
-        'foundation-team' => 'Foundation Team',
-        'foundation-investor' => 'Foundation Investor',
-        'foundation-cases' => 'Foundation Case Studies',
-        'foundation-actions' => 'Foundation Actions',
     );
 
     foreach ($pages as $slug => $title) {
@@ -109,13 +105,24 @@ function velnex_create_foundation_stage_pages() {
 add_action('after_switch_theme', 'velnex_create_foundation_stage_pages');
 add_action('init', 'velnex_create_foundation_stage_pages');
 
-function velnex_enqueue_foundation_stage_assets() {
-    $foundation_pages = array(
-        'foundation-stage',
+function velnex_redirect_old_foundation_pages() {
+    $old_foundation_pages = array(
         'foundation-team',
         'foundation-investor',
         'foundation-cases',
         'foundation-actions',
+    );
+
+    if (is_page($old_foundation_pages)) {
+        wp_safe_redirect(home_url('/foundation-stage/'), 301);
+        exit;
+    }
+}
+add_action('template_redirect', 'velnex_redirect_old_foundation_pages');
+
+function velnex_enqueue_foundation_stage_assets() {
+    $foundation_pages = array(
+        'foundation-stage',
     );
 
     if (!is_page($foundation_pages)) {
