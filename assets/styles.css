@@ -704,7 +704,10 @@ p {
 
 .opportunity-section,
 .service-process,
-.service-output {
+.service-output,
+.service-audience,
+.service-levels,
+.client-fit {
   background: var(--paper);
 }
 
@@ -1036,6 +1039,59 @@ p {
 .partner-criteria p {
   max-width: 780px;
   color: rgba(255, 255, 255, 0.72);
+}
+
+.service-card-grid,
+.service-level-grid,
+.client-fit-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  margin-top: 48px;
+  background: var(--line);
+  border: 1px solid var(--line);
+}
+
+.service-card-grid article,
+.service-level-grid article,
+.client-fit-grid article {
+  min-height: 260px;
+  padding: 28px;
+  background: var(--white);
+}
+
+.service-card-grid span,
+.service-level-grid span,
+.client-fit-grid span {
+  display: block;
+  margin-bottom: 22px;
+  color: var(--teal);
+  font-size: 0.82rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.service-card-grid strong,
+.service-level-grid strong,
+.client-fit-grid strong {
+  display: block;
+  margin-bottom: 16px;
+  color: var(--ink);
+  font-family: var(--font-serif);
+  font-size: 1.35rem;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.service-card-grid p,
+.service-level-grid p,
+.client-fit-grid p {
+  margin: 0;
+  color: #2f3a49;
+}
+
+.service-investor-grid {
+  margin-top: 48px;
 }
 
 .team-grid {
@@ -1451,6 +1507,9 @@ p {
   .insight-grid,
   .role-grid,
   .partner-grid,
+  .service-card-grid,
+  .service-level-grid,
+  .client-fit-grid,
   .service-steps,
   .service-plan-board,
   .service-plan-compare {
@@ -1507,6 +1566,9 @@ p {
   .opportunity-note,
   .role-grid article,
   .partner-grid article,
+  .service-card-grid article,
+  .service-level-grid article,
+  .client-fit-grid article,
   .service-steps article {
     padding: 22px 18px;
   }
